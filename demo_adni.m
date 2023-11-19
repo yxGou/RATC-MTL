@@ -1,23 +1,8 @@
 clc
 clear
-load('F:\A科研\CTC_ML\code\adni_pls\data\predict_data\X10_random_f.mat')
-load('F:\A科研\CTC_ML\code\adni_pls\data\predict_data\Y10_random_f.mat')
-MD=Y(:,:,1);
-MA=Y(:,:,2);
-MM=Y(:,:,3);
-MRB=Y(:,:,5);
-MR=Y(:,:,[4,6,7]);
-MF=Y(:,:,8);
 
-Y1(:,:,1)=MD;
-Y1(:,:,2)=MA;
-Y1(:,:,3)=MM;
-Y1(:,:,4:6)=MR;
-Y1(:,:,7)=MF;
-
-
-% load('X1.mat')
-% load('Y1.mat')
+load('X1.mat')
+load('Y1.mat')
 
 [n,T,V]=size(Y1);
 Times=10;
